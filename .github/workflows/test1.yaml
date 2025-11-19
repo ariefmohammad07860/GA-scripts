@@ -1,0 +1,12 @@
+name: Sample test1 workflow
+on: 
+   workflow_dispatch:
+jobs:
+   build:
+      runs-on: ubuntu-latest
+      steps:
+         - name: File display
+           run: cat arief.txt
+           
+         - name: Display Content
+           run: echo "Hello Arief Mohammad"
