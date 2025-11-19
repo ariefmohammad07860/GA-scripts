@@ -11,5 +11,5 @@ jobs:
          - name: File display
            run: cat arief.txt
            
-         - name: Display Content
+         - name: Display Content12
            run: echo "Hello Arief Mohammad"
