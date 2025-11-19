@@ -1,0 +1,17 @@
+name: Pipeline workflows
+
+on:
+   workflow_dispatch:
+jobs:
+   job1:
+      runs-on: ubuntu:latest
+      steps:
+         - name: Display namedd..
+           run: | 
+              echo "Arief Mohammad"
+              ls -lrth
+              pwd
+              date
+              uptime
+              date
+              uname
