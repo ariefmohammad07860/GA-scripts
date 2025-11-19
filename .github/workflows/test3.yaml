@@ -1,0 +1,17 @@
+name: Testing Workflow
+
+on:
+  workflow_dispatch:   
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  
+
+      - name: Hello display
+        run: echo "Arief Mohammad"
+
+      - name: Display the Date
+        run: date
