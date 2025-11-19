@@ -6,8 +6,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Welcome message
-        - run: echo "This is Arief"
+          run: echo "This is Arief"
 
         - name: Display Date Command
-        - run: date
+          run: date
         
