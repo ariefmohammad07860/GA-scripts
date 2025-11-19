@@ -1,0 +1,11 @@
+name: New workflow
+on: push
+jobs:
+   test-job:
+      runs-on: ubuntu-latest
+      steps:
+         - name: Welcome message
+         - run: echo "This is Arief..."
+
+         - name: Date commad
+         - run: date
