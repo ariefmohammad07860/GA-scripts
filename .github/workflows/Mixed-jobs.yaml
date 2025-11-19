@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Build started"
+      - run: echo "Build started.."
 
   lint:
     runs-on: ubuntu-latest
