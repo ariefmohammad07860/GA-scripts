@@ -11,8 +11,10 @@ jobs:
            
          - name: User name
            run: echo "Arief"
-         - name: File Permissions
+           
+         - name: File Permissions..
            run: chmod +x run-script.sh
+           
          - name: Run the shell script
            run: ./run-script.sh
 
