@@ -1,0 +1,11 @@
+name: Arief Testing Workflow
+on: push
+jobs:
+   test-job:
+      runs-on:  ubuntu-latest
+      steps:
+         - name: Hello display
+         - run: echo "Hello Arief Mohammad"
+
+         - name: Date display
+         - run: date
