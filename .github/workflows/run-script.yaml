@@ -1,0 +1,20 @@
+name: Sheel script workflows
+
+on:
+   workflow_dispatch:
+jobs:
+   job1:
+      runs-on: ubuntu-latest
+      steps:
+         - name: Checkout repository
+           uses: actions/checkout@v4
+           
+         - name: User name
+           run: echo "Arief"
+           
+         - name: Run the shell script
+           run: ./run-script.sh
+
+      
+           
+           
