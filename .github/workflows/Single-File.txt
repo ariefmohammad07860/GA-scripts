@@ -1,0 +1,16 @@
+name: Artifact Upload and Download the Example
+on: 
+   workflow_dispatch
+jobs:
+   job1:
+      runs-job: ubuntu-latest
+      steps:
+         - name: Create File
+           run: echo "Hello this is Arief Mohammad" > arief.txt
+
+         - name: Upload file as Artifact
+           uses: actions/upload-artifact@v4
+           with: 
+              name: datafile
+              path: arief.txt
+
