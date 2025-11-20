@@ -13,4 +13,15 @@ jobs:
            with: 
               name: datafile
               path: arief.txt
+   job2:
+      runs-on: ubuntu-latest
+      steps:
+         - name: Download the Artifact
+           uses: actions/download-artifact@v4
+           with: 
+              name: datafile
+
+         - name: Display the file Data
+           run: cat arief.txt
+          
 
