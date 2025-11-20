@@ -1,9 +1,9 @@
 name: Artifact Upload and Download the Example
 on: 
-   workflow_dispatch
+   workflow_dispatch:
 jobs:
    job1:
-      runs-job: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
          - name: Create File
            run: echo "Hello this is Arief Mohammad" > arief.txt
