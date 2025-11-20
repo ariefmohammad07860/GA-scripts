@@ -10,9 +10,9 @@ jobs:
               CITY: HYD
               NAME: ARIEF
            run: |
-              echo "Areief Mohammad" > arief.txt
-              MY city is $CITY
-              $NAME staying at $CITY
+              echo "Arief Mohammad" > arief.txt
+              echo "MY city is $CITY"
+              echo "$NAME staying at $CITY"
               ls -lrth
               cat arief.txt
          - name: Next step
