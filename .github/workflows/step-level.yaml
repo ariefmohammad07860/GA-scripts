@@ -5,12 +5,11 @@ on:
 jobs:
   demo:
     runs-on: ubuntu-latest
-    
+    env:
+       CITY: HYD
+       NAME: ARIEF
     steps:
       - name: Step level example
-        env:
-          CITY: HYD
-          NAME: ARIEF
         run: |
           echo "Arief Mohammad" > arief.txt
           echo "My city is $CITY"
