@@ -1,0 +1,20 @@
+name: Step level Env Example
+on:
+   workflow_dispatch:
+jobs:
+   demo:
+      runs-on: ubuntu-latest
+      steps:
+         - name: Step level example
+           env:
+              CITY: HYD
+              NAME: ARIEF
+           run: |
+              echo "Areief Mohammad" > arief.txt
+              MY city is $CITY
+              $NAME staying at $CITY
+              ls -lrth
+              cat arief.txt
+         - name: Next step
+           run: echo "City is $CITY and traniner is $NAME"  
+              
