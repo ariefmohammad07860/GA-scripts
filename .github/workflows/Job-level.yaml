@@ -1,0 +1,14 @@
+name: Job Level example
+on:
+   workflow_dispatch
+jobs:
+   example:
+      runs-on: ubuntu-latest
+      env:
+         NAME: ARIEF MOHAMMAD
+         CITY: HYDERABAD
+      steps:
+         - name: Step one
+           run: echo "This is $NAME"
+         - name: Step two
+           run: echo "I am from $CITY"
