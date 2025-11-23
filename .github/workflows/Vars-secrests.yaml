@@ -9,11 +9,11 @@ jobs:
 
     steps:
       - name: Show repository variable
-        run: echo "Company is ${{ vars.COMPANY }}"
+        run: echo "Company is ${{ vars.ROLE }}"
 
       - name: Use secret key
         env:
-          KEY: ${{ secrets.NAME_DEV }}
+          KEY: ${{ secrets.API_KEY }}
         run: |
           echo "Secret key received"
           echo "$KEY"   # Will be masked in logs
