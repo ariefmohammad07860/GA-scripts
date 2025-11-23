@@ -1,0 +1,14 @@
+name: Hello World - Every 1 Minute
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"  # Runs every 1 minute
+  workflow_dispatch:        # Optional: Allows manual trigger
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Hello World! $(date)"
