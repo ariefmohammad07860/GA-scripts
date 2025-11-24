@@ -5,11 +5,10 @@ on:
 jobs:
    sample:
       runs-on: ubuntu-latest
-      timeout-minutes: 1
       steps:
          - name: Start
            run: echo "Welcome to Timeout"
          - name: Started the Timeout 
-           # timeout-minutes: 1
-           run: sleep 150
+           timeout-minutes: 1
+           run: sleep 90
          - run: echo "Timeout completed"
