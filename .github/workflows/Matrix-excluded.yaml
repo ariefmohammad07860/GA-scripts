@@ -13,4 +13,7 @@ jobs:
           - os: windows-latest
             node: 18
     steps:
-      - run: echo "$matrix.os $matrix.node"
+      - run: |
+          echo "OS ${{ matrix.os }}"
+          echo "Node ${{ matrix.node }}"
+        
