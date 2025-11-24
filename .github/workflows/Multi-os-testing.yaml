@@ -9,5 +9,9 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         node: [16, 18]
+        include:
+           - os: ubuntu-latest
+             node: 18
+             description: "optimized build"
     steps:
       - run: echo "Testing on ${{ matrix.os }}"
