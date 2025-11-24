@@ -11,7 +11,7 @@ jobs:
         node: [16, 18]
         include:
           - os: ubuntu-latest
-            node: 18
+            node: 16, 18
             message: optimized-build
     steps:
       - run: |
