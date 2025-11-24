@@ -15,3 +15,5 @@ jobs:
              description: "optimized build"
     steps:
       - run: echo "Testing on ${{ matrix.os }}"
+             echo "Message ${{ matrix.node }}"
+             echo "Message ${{ matrix.message }}"
