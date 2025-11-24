@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [linux]
+        os: [ubuntu-latest]
         images: [ariefmd/maven-web:1.0.0]
     steps:
       - name: Docker details
