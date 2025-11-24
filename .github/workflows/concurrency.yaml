@@ -1,0 +1,13 @@
+name: Concurrency workflow
+on:
+   workflow_dispatch
+concurrency:
+   group: main-branch-group
+   cancel-in-progress: true
+jobs:
+   demo:
+      runs-on: ubuntu-latest
+      steps: 
+         - run: echo "Started..."
+         - run: sleep 300
+         - run: echo "Finshed"
