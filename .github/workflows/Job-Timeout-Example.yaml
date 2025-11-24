@@ -1,0 +1,14 @@
+name: Job-Timeout-Example
+on:
+   workflow_dispatch
+
+jobs:
+   sample:
+      runs-on: ububtu-latest
+      timeout-minutes: 1
+      steps:
+         - name: Start
+           run: echo "Welcome to Timeout"
+         - name: Started the Timeout 
+           run: sleep 360
+         - run: echo "Timeout completed"
