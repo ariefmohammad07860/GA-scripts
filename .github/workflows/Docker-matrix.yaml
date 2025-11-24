@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        images: [hello-world, alpine, mongo, ariefmd/maven-web-application:8.0.9]
+        images: [hello-world, alpine, mongo:8.0.9:noble, ariefmd/maven-web-application:1.0.0]
     steps:
       - name: Docker details
         run: docker info
