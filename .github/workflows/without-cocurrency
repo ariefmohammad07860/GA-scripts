@@ -1,0 +1,12 @@
+name: Without Concurrency-flow
+
+on:
+   workflow_dispatch:
+
+jobs:
+   demo:
+      runs-on: ubuntu-latest
+      steps:
+         - run: echo "Run workflows"
+         - run: sleep 300
+         - run: echo "Finshed" 
