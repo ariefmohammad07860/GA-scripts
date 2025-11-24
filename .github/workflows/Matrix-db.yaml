@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        db: [mysql:8, postgres:12]
+        db: [mysql:8, postgres:12,mongo8.0.9-noble]
     services:
       db:
         image: ${{ matrix.db }}
