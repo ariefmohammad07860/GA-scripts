@@ -7,8 +7,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        images: [hello-world, alpine, mongo:8.0.9:noble, ariefmd/maven-web-application:1.0.0]
+        os: [ubuntu-latest,linux]
+        images: [hello-world, alpine, ariefmd/maven-web:1.0.0, ariefmd/maven-web-app:1.0.1]
     steps:
       - name: Docker details
         run: docker info
