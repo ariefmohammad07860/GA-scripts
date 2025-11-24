@@ -8,9 +8,15 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        images: [ariefmd/maven-web:1.0.0]
+        images:
+          - ariefmd/maven-web-app:1.0.0
+          - ariefmd/maven-web-app:1.0.2   # <-- Add more tags here
     steps:
       - name: Docker details
         run: docker info
+
+      - name: Pull image
+        run: docker pull ${{ matrix.images }}
+
       - name: Run image
         run: docker run ${{ matrix.images }}
