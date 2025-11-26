@@ -3,6 +3,7 @@ on:
   push:
     paths-ignore:
       - README.md
+      - arief.txt
 jobs:
   ci:
     runs-on: ubuntu-latest
