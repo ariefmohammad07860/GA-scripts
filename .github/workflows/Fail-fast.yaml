@@ -10,7 +10,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest, windows-latest]
-        images: [hello-world, alphine]
+        images: [hello-world, alphine, ariefmd12345]
 
     steps:
       - name: Docker Details
