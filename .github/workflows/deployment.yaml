@@ -15,4 +15,4 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - run: echo "Deploying to production"
-      - run: "Arief Mohamad"
+      - run: echo "Arief Mohamad"
