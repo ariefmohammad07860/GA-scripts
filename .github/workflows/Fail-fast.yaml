@@ -1,0 +1,20 @@
+name: Docker Matrix Fail-Fast
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      max-parallel: 1
+      fail-fast: true
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        images: [hello-world, alphine]
+
+    steps:
+      - name: Docker Details
+        run: docker info
+
+      - name: Run Image
+        run: docker run ${{ matrix.images }}
